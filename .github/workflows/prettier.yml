@@ -22,8 +22,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-      - name: Run Prettify
-        run: npm run prettify
+      - name: Run format
+        run: npm run format
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 🚨 apply automatic fixes
