@@ -25,9 +25,9 @@ export async function openAIRequest(userMessage: string): Promise<unknown> {
       {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${config.openai.apiKey}`,
+          'Authorization': `Bearer ${config.openai.apiKey}`,
         },
-      }
+      },
     );
 
     return response.data.choices[0].message.content;
