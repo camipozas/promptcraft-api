@@ -1,8 +1,4 @@
-// Dummy code to test the build process
-const world = 'world';
+// call openAIRequest('Hello!') to test the function
+import { openAIRequest } from './helpers/openai-request';
 
-export function hello(who: string = world): string {
-  return `Hello ${who}! `;
-}
-
-console.log(hello());
+openAIRequest('Hello!').then(console.log);

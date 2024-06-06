@@ -1,0 +1,11 @@
+{
+    // extend your base config to share compilerOptions, etc
+    "extends": "./tsconfig.json",
+    "include": [
+      "src/**/*",
+      "test/**/*",
+    ],
+    "exclude": [
+      "node_modules",
+    ],
+  }
