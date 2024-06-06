@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  remark:
+  npm-run-format:
     runs-on: ubuntu-latest
     permissions:
       contents: write
