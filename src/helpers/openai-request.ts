@@ -8,7 +8,7 @@ import { OpenAIRequest } from './openai.types';
  * @returns The response from the OpenAI API.
  * @throws An error if the request fails.
  */
-export async function openAIRequest(userMessage: string): Promise<any> {
+export async function openAIRequest(userMessage: string): Promise<unknown> {
   const openAIRequest: OpenAIRequest = {
     model: 'gpt-3.5-turbo',
     messages: [
