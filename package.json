@@ -1,0 +1,31 @@
+{
+  "name": "promptcraft-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "start": "ts-node src/index.ts",
+    "build": "tsc && npm run start",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "format": "prettier --write \"./**/*.{ts,js}\"",
+    "check-format": "prettier -c \"./**/*.{ts,js}\"",
+    "lint": "npm run format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camipozas/promptcraft-api.git"
+  },
+  "author": "Camila Pozas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camipozas/promptcraft-api/issues"
+  },
+  "homepage": "https://github.com/camipozas/promptcraft-api#readme",
+  "devDependencies": {
+    "prettier": "^3.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
